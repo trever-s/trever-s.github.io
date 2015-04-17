@@ -1,0 +1,265 @@
+@import "settings";
+@import "foundation";
+
+//@import "foundation/components/tables";
+// Or selectively include components
+// @import
+//   "foundation/components/accordion",
+//   "foundation/components/alert-boxes",
+//   "foundation/components/block-grid",
+//   "foundation/components/breadcrumbs",
+//   "foundation/components/button-groups",
+//   "foundation/components/buttons",
+//   "foundation/components/clearing",
+//   "foundation/components/dropdown",
+//   "foundation/components/dropdown-buttons",
+//   "foundation/components/flex-video",
+//   "foundation/components/forms",
+//   "foundation/components/grid",
+//   "foundation/components/inline-lists",
+//   "foundation/components/joyride",
+//   "foundation/components/keystrokes",
+//   "foundation/components/labels",
+//   "foundation/components/magellan",
+//   "foundation/components/orbit",
+//   "foundation/components/pagination",
+//   "foundation/components/panels",
+//   "foundation/components/pricing-tables",
+//   "foundation/components/progress-bars",
+//   "foundation/components/reveal",
+//   "foundation/components/side-nav",
+//   "foundation/components/split-buttons",
+//   "foundation/components/sub-nav",
+//   "foundation/components/switches",
+//   "foundation/components/tables",
+//   "foundation/components/tabs",
+//   "foundation/components/thumbs",
+//   "foundation/components/tooltips",
+//   "foundation/components/top-bar",
+//   "foundation/components/type",
+//   "foundation/components/offcanvas",
+//   "foundation/components/visibility";
+//
+html {
+	background: url(../assets/large-bg-no-zombie.png) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background-position: top;
+background-color: #3f3126;
+}
+/*-------------------------------BANNER SECTION BEGIN--------------------------*/
+.banner{
+		height: 59px;
+}
+.banner img{
+		width: auto;
+	height:59px;
+}
+@media #{$large-up} {
+.banner{
+	margin-bottom: 143px;
+}
+}
+@media #{$medium-only} {
+.banner{
+	margin-bottom: 62px;
+}
+.zombie-attack img{
+	width: 100%;
+}
+}
+@media #{$small-only} {
+.banner{
+	margin-bottom: 87px;
+}
+.zombie-attack img{
+	width: 100%;
+	margin-bottom: rem-calc(45);
+}
+}
+/*-------------------------------BANNER SECTION END--------------------------*/
+
+
+/*-------------------------------HERO SECTION BEGIN--------------------------*/
+
+@media #{$large-up} {
+.zombie-attack img{
+	float:right;
+	margin-right: 15px;
+}
+.green-zombies{
+	z-index: -1;
+	position: absolute;
+	top:405px;
+}
+}
+@media #{$medium-only} {
+.zombie-attack img{
+	margin-bottom: 36px;
+}
+.green-zombies{
+	z-index: -1;
+	position: relative;
+	display:block;
+	float:left;
+	clear: left;
+	top: 0;
+	margin-top: 20px;
+//	background: #3f3126;
+}
+}
+@media #{$small-only}{
+.green-zombies{
+	z-index: -1;
+	position: relative;
+	display:block;
+	float:left;
+	clear: left;
+	top: 0;
+	margin-top: 20px;
+//	background: #3f3126;
+}
+}
+/*-------------------------------HERO SECTION END--------------------------*/
+
+
+/*-------------------------------FORM SECTION BEGIN--------------------------*/
+input{
+	font-weight: bold;
+	-webkit-border-radius: .625rem;
+	-ms-border-radius: .625rem;
+	border-radius: .625rem;
+	-webkit-border-radius: 10px !important;
+	-ms-border-radius: 10px;
+	border-radius: 10px;
+}
+
+.check-box-message {
+	font-size: 0.85rem !important;
+	margin-top: 4px;
+}
+@media #{$large-up} {
+.columns .form-field{
+	padding-right: 0 !important;
+}
+}
+@media #{$medium-only} {
+.columns .form-field{
+	padding-right: 0 !important;
+}
+input[type="text"], .select{
+	font-size:  rem-calc(14) !important;
+}
+}
+@media #{$small-only} {
+.fix-padding-mobile-state{
+		padding-right: .46875rem !important;
+}
+.fix-padding-mobile-zip{
+		padding-left: .46875rem !important;
+}
+input[type="text"], .select{
+	font-size:  rem-calc(14) !important;
+}
+}
+.select{
+	font-family: $body-font-family;
+	border-radius: 10px !important;
+	font-weight: bold;
+	color: #978674;
+}
+.select:-moz-focusring{
+		color: transparent !important;
+		text-shadow: 0 0 0 #000 !important;
+}
+:focus {
+		outline: 0;
+		/* or */
+		outline: none;
+}
+.button{
+	font-size: 18px;
+	font-size: 1.125rem;
+	border-radius: 10px !important;
+}
+.button img{
+	margin-left: 10px;
+}
+/*SUPER AWESOME CUSTOM CHECKBOX CSS!!!*/
+input[type="checkbox"]{
+visibility: hidden;
+}
+.style-checkbox {
+	width: 40px;
+	height: 40px;
+	background: transparent;
+	margin: 0;
+
+	border-radius: 100%;
+	position: relative;
+}
+.style-checkbox label{
+	display: block;
+	width: 20px;
+	height: 20px;
+	border-radius: 100px;
+
+	-webkit-transition: all .5s ease;
+	-moz-transition: all .5s ease;
+	-o-transition: all .5s ease;
+	-ms-transition: all .5s ease;
+	transition: all .5s ease;
+	cursor: pointer;
+	position: absolute;
+	top: 5px;
+	left: 5px;
+	z-index: 1;
+
+	background: #FEEBD1;
+}
+input[type="checkbox"] + label{
+	margin-left: 0 !important;
+}
+.style-checkbox input[type=checkbox]:checked + label{
+	background: #668e3f;
+}
+.form-field p{
+	margin-left: 50px;
+}
+@media #{$small-only}{
+.style-checkbox {
+	width: 30px;
+	height: 30px;
+}
+.style-checkbox label{
+	width: 15px;
+	height: 15px;
+}
+.check-box-message{
+	font-size: 1rem !important;
+}
+.button{
+	font-size: 16px;
+	font-size: 1rem;
+	border-radius: 10px !important;
+}
+.button img{
+	margin-left: 10px;
+}
+}
+@media #{$medium-only}{
+.style-checkbox {
+	width: 30px;
+	height: 30px;
+}
+.style-checkbox label{
+	width: 15px;
+	height: 15px;
+}
+.check-box-message {
+	font-size: 0.85rem !important;
+	margin-top: 4px;
+}
+}

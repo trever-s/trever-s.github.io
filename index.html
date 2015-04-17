@@ -1,0 +1,46 @@
+---
+layout: default
+title: Iron-Point | We develop solutions to help marketers succeed.
+description:  We are Iron-Point. We help businesses maximize the impact of their Marketing Automation platform in creative, exciting, and strategic ways.
+---
+  <div class="large-12 columns mp-header">
+    <div class="row">
+      <div class="large-12 columns text-center mp-mast">
+        <h2 class="melting">Melting</h2>
+        <h2 class="point">Point</h2>
+        <h3 class="mp-title text-center">Latest News and Opinions About Marketing Automation from the Iron-Point Team</h3>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="large-10 large-offset-1 medium-10 medium-offset-1 columns">{% for post in site.posts %}
+      <div class="post-list">
+        <h3 class="post-list-title"><a href="{{ post.url }}">{{ post.title }}</a>
+        </h3>
+        <p class="post-list-intro">{{ post.excerpt }}</p>
+        <p class="post-list-author-date">Written by <a href="">{{ post.author }}</a> on {{ post.date | date: '%B %d, %Y' }}</p>
+      </div>{% endfor %}
+    </div>
+  </div>
+  <div class="large-12 columns subscribe-bar">
+    <div class="row">
+      <div class="large-7 medium-7 columns">
+        <span>Blogs not your bag? Get a monthly recap of our greatest hits.</span>
+      </div>
+      <div class="large-5 medium-5 columns">
+        <div class="row collapse">
+          <form name="45b7553b-f2c9-4eee-a9fd-05a837ea8f1a" class="maForm row collapse" method="POST" action="https://apps.net-results.com/data/public/IncomingForm/Ma/submit">
+            <input type="hidden" name="form_id" value="45b7553b-f2c9-4eee-a9fd-05a837ea8f1a"/>
+            <input type="hidden" name="form_access_id" value=""/>
+            <input type="hidden" name="__mauuid" value=""/>
+            <div class="large-8 medium-8 small-12 columns">
+              <input type="text" name="ma-form-element-yui_3_14_1_1_1405399956939_468" class="formText formEmail formRequired" id="subscribe-field" value="" placeholder="hello@example.com">
+            </div>
+            <div class="large-4 medium-4 small-12 columns">
+              <button name="ma-form-element-yui_3_14_1_1_1405399956939_828" value="submit" type="submit" class="postfix hollow-button">Sign-up</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>

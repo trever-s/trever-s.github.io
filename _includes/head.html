@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{{ page.title }}</title>
+  <meta name="description" content="{{ page.description }}" />
+  <meta name="google-site-verification" content="" />
+  <!-- CSS -->
+  <style type="text/css">
+    {% include test.css %}
+  </style>
+  <link rel="stylesheet" href="{{ "../css/styles.css" | prepend: site.baseurl }}">
+  <link rel="stylesheet" href="https://cloud.typography.com/738760/719802/css/fonts.css">
+  {% if page.title == "Case Studies | Iron-Point" %}<link rel="stylesheet" href="https://api.tiles.mapbox.com/mapbox.js/v1.6.4/mapbox.css" />{% endif %}
+  
+  <!--[if lte IE 9]>
+  <style>
+    .mp-header {
+      background-image: url('../assets/images/melting.jpg');
+    }
+  </style>
+  <![endif]-->
+  <!--[if lt IE 9]>
+  <script type="text/javascript">
+    window.location = "http://browsehappy.com/";
+  </script>
+  <![endif]-->
+  <!--[if IE 8]>
+  <style>
+    .nav-column {
+      width: 30% !important;
+      margin-left: 3%;
+    }
+    .nav-column:first-of-type {
+      margin-left: 10% !important;
+    }
+    nav.item-detail {
+      float:left !important;
+      clear: left !important;
+      width: 100% !important;
+    }
+    nav.item {
+      float: left;
+    }
+  </style>
+  <![endif]-->
+</head>
