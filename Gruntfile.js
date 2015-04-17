@@ -30,19 +30,6 @@ module.exports = function(grunt) {
 				}
 			}
 		},
-/*
-		uncss: {
-			dist: {
-				options: {
-					csspath:
-						'http://localhost:4000/css/styles.css',
-				}
-				files: {
-					'css/tidy.css'
-				}
-			}
-		},
-*/
    uglify: {
      my_target: {
        files: {
@@ -58,37 +45,16 @@ module.exports = function(grunt) {
          ]
        }
      }
-   },
-
-  	penthouse: {
-	    extract: {
-	        outfile : '_includes/test.css',
-	        css : 'css/styles.css',
-	        url : 'http://localhost:4000',
-	        width : 1300,
-	        height : 900
-			  }
-		  },
-
+   },		
 		watch: {
 			grunt: { files: ['Gruntfile.js'] },
 			sass: {
 				files: 'scss/**/*.scss',
 				tasks: ['sass']
 			},
-/*
-			uncss: {
-				files: 'css/*.css',
-				tasks: ['uncss']
-			},
-*/
 			uglify: {
 				files: 'js/*.js',
 				tasks: ['uglify']
-			},
-			penthouse: {
-				files: 'css/*.css',
-				tasks: ['penthouse']
 			},
 			livereload: {
 				files: [
@@ -116,18 +82,14 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-shell');
 	grunt.loadNpmTasks('grunt-contrib-connect');
 	grunt.loadNpmTasks('grunt-contrib-watch');
-	//grunt.loadNpmTasks('grunt-uncss');
 	grunt.loadNpmTasks('grunt-contrib-uglify');
-	grunt.loadNpmTasks('grunt-penthouse');
 
 	grunt.registerTask('build', [
 		'sass',
-		'uglify',
-		'penthouse'
-		//'uncss'
+		'uglify'
 	]);
 	grunt.registerTask('default', [
-		'shell:jekyllBuild',
+		'shell',
 		'build',
 		'connect',
 		'watch'
