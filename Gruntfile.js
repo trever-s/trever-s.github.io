@@ -54,11 +54,7 @@ module.exports = function(grunt) {
            'bower_components/jquery/dist/jquery.min.js',
            'bower_components/foundation/js/foundation.min.js',
            'bower_components/modernizr/modernizr.js',
-           'js/capture.js',
-           'js/app.js',
-           'js/jquery.validate.js',
-           'js/additional-methods.js',
-           'js/validation-rules.js'
+           'js/app.js'
          ]
        }
      }
