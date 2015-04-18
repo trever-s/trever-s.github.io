@@ -1,9 +1,9 @@
 ---
 layout: post
-published: false
+published: true
 title: Using Prose and Jekyll to write blog posts.
 date: "2014-08-15"
-author: Garrett Pickrel
+author: Joe Smith
 excerpt: "Prose is a GUI which allows users to easily create blog posts on the fly. You do not need to know how to write any code. Just follow the steps in this blog post and you will be on your way!"
 ---
 
