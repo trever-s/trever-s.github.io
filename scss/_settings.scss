@@ -36,6 +36,7 @@
 // $include-xl-html-grid-classes: false;
 
 // $row-width: rem-calc(1000);
+   $row-width: rem-calc(1160);
 // $total-columns: 12;
 
 // Global
@@ -51,7 +52,7 @@
 // $body-font-style: normal;
 
      $body-bg: #fff;
-     $body-font-family: 'Whitney SSm A', 'Whitney SSm B', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+     $body-font-family: 'TiemposText-Regular', Georgia, 'Times Roman', serif;
 
 // We use this to control font-smoothing
 // $font-smoothing: antialiased;
@@ -62,15 +63,17 @@
 // $default-float: left;
 
 // We use these as default colors throughout
-// $primary-color: #f37742;
+   $primary-color: #363636;
 // $secondary-color: #e7e7e7;
 // $alert-color: #f04124;
 // $success-color: #43AC6A;
 // $warning-color: #f08a24;
 // $info-color: #a0d3e8;
 
-     $iron-orange: #f37742;
-     $iron-black: #242323;
+     $srs: #6ebf4b;
+     $abm: #003399;
+     $blue: #0a85ff;
+     $black: #393939;
 
      $dark-grey: #333;
      $mid-grey: #999;
@@ -90,7 +93,7 @@
 // $shiny-edge-color: rgba(#fff, .5);
 // $shiny-edge-active-color: rgba(#000, .2);
 
-// $column-gutter: rem-calc(30);
+ $column-gutter: rem-calc(30);
 
 // Media Query Ranges
 // $small-range: (0em, 40em);
@@ -161,8 +164,8 @@ $header-bottom-margin: 0;
 // $h5-font-size: rem-calc(18);
 // $h6-font-size: 1rem;
 
-     $h2-font-size: rem-calc(14);
-     $h3-font-size: rem-calc(22);
+// $h2-font-size: rem-calc(14);
+// $h3-font-size: rem-calc(22);
 
 // We use these to control header size reduction on small screens
      $h1-font-reduction: rem-calc(2) !default;
@@ -187,7 +190,7 @@ $header-bottom-margin: 0;
 // $paragraph-font-family: inherit;
 // $paragraph-font-weight: $font-weight-normal;
 // $paragraph-font-size: 1rem;
-   $paragraph-line-height: 1.45;
+// $paragraph-line-height: 1.45;
 // $paragraph-margin-bottom: rem-calc(20);
 // $paragraph-aside-font-size: rem-calc(14);
 // $paragraph-aside-line-height: 1.35;
@@ -203,7 +206,7 @@ $header-bottom-margin: 0;
 // $anchor-text-decoration: none;
 // $anchor-text-decoration-hover: none;
 // $anchor-font-color: $primary-color;
-     $anchor-font-color: #f37742;
+   $anchor-font-color: #363636;
 // $anchor-font-color-hover: scale-color($primary-color, $lightness: -14%);
 
 // We use these to style the <hr> element
@@ -384,13 +387,13 @@ $blockquote-border: none;
 // $button-margin-bottom: rem-calc(20);
 
 // We use these to control button text styles.
-// $button-font-family: $body-font-family;
-// $button-font-color: #fff;
+   $button-font-family: 'Titling Gothic FB Narr Light';
+   $button-font-color: #fff;
 // $button-font-color-alt: #333;
 // $button-font-tny: rem-calc(11);
 // $button-font-sml: rem-calc(13);
 // $button-font-med: rem-calc(16);
-// $button-font-lrg: rem-calc(20);
+   $button-font-lrg: rem-calc(21);
 // $button-font-weight: $font-weight-normal;
 // $button-font-align: center;
 
@@ -398,11 +401,10 @@ $blockquote-border: none;
 // $button-function-factor: -20%;
 
 // We use these to control button border styles.
-// $button-border-width: 0px;
-// $button-border-style: solid;
-// $button-bg: $primary-color;
-   $button-bg: $iron-orange;
-// $button-border-color: scale-color($bg, $lightness: $button-function-factor);
+   $button-border-width: 2px;
+   $button-border-style: solid;
+   $button-bg: $primary-color;
+   $button-border-color: #fff;
 
 // We use this to set the default radius used throughout the core.
 // $button-radius: $global-radius;

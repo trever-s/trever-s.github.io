@@ -24,50 +24,53 @@ module.exports = function(grunt) {
     },
 
 
-// livereloadx: {
-//       static: true,
-//       dir: '.'
-//     },
-//     watch: {
-//       jekyll: {
-//         files: ['**/*.html', '**/*.md', '_layouts/*.html', 'scss/*.scss', 'css/*.css', 'scripts/*.js', 'images/*'],
-//         tasks: ['shell:jekyll_build']
-//       }
-//     },
+    livereloadx: {
+      static: true,
+      dir: '.'
+    },
+
+    watch: {
+      jekyll: {
+        files: ['**/*.html', '**/*.md', '_layouts/*.html', 'scss/*.scss', 'css/*.css', 'scripts/*.js', 'images/*'],
+        tasks: ['shell:jekyll_build']
+      }
+    },
 
     connect: {
       server: {
         options: {
-          port: 4000,
+          port: '4000',
+          hostname: '10.0.1.5',
           base: '_site'
         }
       }
     },
 
-
-
-
    uglify: {
      my_target: {
        files: {
-         'js/output.min.js': [
+         'js/uglified/output.min.js': [
            'bower_components/jquery/dist/jquery.min.js',
            'bower_components/foundation/js/foundation.min.js',
            'bower_components/modernizr/modernizr.js',
-           'js/app.js'
+           'js/jquery.easing.min.js',
+           'js/scripts.js',
+           'js/custom.js',
+           'js/active_section_scrolling.js'
          ]
        }
      }
-   },   
+   },
+
     watch: {
       grunt: { files: ['Gruntfile.js'] },
 
-// all: {
-//             files: '**/*.html',
-//             options: {
-//                 livereload: true
-//         }
-//     },
+  all: {
+            files: '**/*.html',
+            options: {
+                livereload: true
+        }
+    },
 
 
       sass: {
@@ -82,10 +85,9 @@ module.exports = function(grunt) {
         files: [
           '_config.yml',
           'index.html',
-          'about-us/index.html',
-          'case-studies/index.html',
-          'contact-us/index.html',
-          'privacy-policy/index.html',
+          'about/index.html',
+          'portfolio/**',
+          'contact/index.html',
           'trever/index.html',
           '_layouts/**',
           '_posts/**',
