@@ -40,7 +40,7 @@ module.exports = function(grunt) {
       server: {
         options: {
           port: '4000',
-          hostname: '10.0.1.5',
+          // hostname: '10.0.1.5',
           base: '_site'
         }
       }
@@ -52,10 +52,12 @@ module.exports = function(grunt) {
          'js/uglified/output.min.js': [
            'bower_components/jquery/dist/jquery.min.js',
            'bower_components/foundation/js/foundation.min.js',
+           'bower_components/foundation/js/foundation.interchange.js',
+           'js/app.js',
            'bower_components/modernizr/modernizr.js',
            'js/jquery.easing.min.js',
+           'js/customs.js',
            'js/scripts.js',
-           'js/custom.js',
            'js/active_section_scrolling.js'
          ]
        }

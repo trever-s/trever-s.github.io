@@ -68,18 +68,23 @@ a.header-link, a.header-link:visited, a.header-link:hover, a.header-link:active 
 .nav li {
   display: inline;
   font-family: 'Titling Gothic FB Narr Light';
-  margin-right: 5px;
 }
 
-.nav li:last-child {
-  margin-right: 0;
+.nav li:after {
+  content: "\00B7";
+  margin: 0 5px;
 }
 
-.dot {
-  color: $black;
-  display: inline;
-  font-size: rem-calc(30);
+.nav li:last-of-type:after {
+  content: "";
+  margin: 0;
 }
+
+// .dot {
+//   color: $black;
+//   display: inline;
+//   font-size: rem-calc(30);
+// }
 
 
 a.active {
@@ -556,6 +561,11 @@ p:last-of-type {
   color: #fff; 
 }
 
+.hero-io {
+  background-image: url("../assets/images/hero-fusion-io.jpg");
+  color: #fff; 
+}
+
 .hero-name {
   font-size: rem-calc(75);
   margin: 31px 0 8px;
@@ -574,8 +584,8 @@ p:last-of-type {
   border-color: #6ebf4b;
 }
 
-.hero-divider-abm {
-  border-color: #f29547;
+.hero-divider-abm, .hero-divider-io {
+  border-color: rgba(255,255,255,0.5);
 }
 
 .hero-divider-fluke {
@@ -1040,6 +1050,15 @@ z-index: 2;
   text-decoration: none;
 }
 
+.footer-nav-items:after {
+  content: "\00B7";
+  margin-left: 5px;
+}
+
+.footer-nav-items:last-of-type:after {
+  content: "";
+}
+
 .footer-credits {
   text-align: right;
   margin-right: 0;
@@ -1098,8 +1117,9 @@ html {
   margin: 10px 0 30px 0;
 }
 
-.dot {
-  font-size: rem-calc(18)
+.nav li:after {
+  font-size: rem-calc(18);
+  vertical-align: 0px;
 }
 
 /* full-width */
@@ -1126,7 +1146,7 @@ html {
   padding: 30px 0 0 0;
 }
 
-.hero-fluke, .hero-ip {
+.hero-fluke, .hero-ip, .hero-io {
   padding: 30px 0;  
 }
 
@@ -1255,8 +1275,9 @@ html {
   font-size: rem-calc(17);
 }
 
-.dot {
+.nav li:after {
   font-size: rem-calc(20);
+  vertical-align: -1px;
 }
 
 /* full-width */
@@ -1283,7 +1304,7 @@ html {
   padding: 30px 0 0 0;
 }
 
-.hero-fluke, .hero-ip {
+.hero-fluke, .hero-ip, .hero-io {
   padding: 30px 0;
 }
 
@@ -1390,7 +1411,7 @@ html {
 
   /* header */
 .header {
-  margin: 71px 0 0 102px;
+  margin: 73px 0 0 102px;
   text-align: left;
 }
 
@@ -1405,15 +1426,16 @@ html {
 /* nav */
 .nav {
   text-align: right;
-  margin: 92px 102px 90px 0;
+  margin: 85px 95px 90px 0;
 }
 
 .nav li {
   font-size: rem-calc(21);
 }
 
-.nav li:last-child {
-  margin-right: 0;
+.nav li:after {
+  font-size: rem-calc(30);
+  vertical-align: -2px;
 }
 
 /* hero */
@@ -1421,7 +1443,7 @@ html {
   min-height: 440px; 
 }
 
-.hero-abm, .hero-fluke, .hero-ip {
+.hero-abm, .hero-fluke, .hero-ip, .hero-io {
   padding: 140px 0;  
 }
 
@@ -1585,6 +1607,10 @@ only screen and (                min-resolution: 2dppx) {
 
 .hero-ip {
   background-image: url("../assets/images/hero-iron-point-x2.jpg");
+}
+
+.hero-io {
+  background-image: url("../assets/images/hero-fusion-io-x2.jpg");
 }
 
 
