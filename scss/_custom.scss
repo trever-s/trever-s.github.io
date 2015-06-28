@@ -228,7 +228,6 @@ a:active.button.large {
 
 .main-description {
     font-family: 'TiemposText'; 
-    margin-top: -20px;
     display: block;
 }
 
@@ -535,7 +534,6 @@ p:last-of-type {
   margin-bottom: 0;
 }
 
-
 /* Hero */
 .hero-srs {
   background-image: url("../assets/images/hero-seagate.jpg");
@@ -553,28 +551,39 @@ p:last-of-type {
   color: #fff;
 }
 
+.hero-ip {
+  background-image: url("../assets/images/hero-iron-point.jpg");
+  color: #fff; 
+}
+
 .hero-name {
   font-size: rem-calc(75);
   margin: 31px 0 8px;
 }
 
 .hero-divider {
-  width: 5%;
+  width: 10%;
   margin: 0 auto;
   border: 0;
   margin-top: 20px;
+  border-top-width: 2px;
+  border-top-style: solid;
 }
 
 .hero-divider-srs {
-  border-top: 2px solid #6ebf4b;
+  border-color: #6ebf4b;
 }
 
 .hero-divider-abm {
-  border-top: 2px solid #f29547;
+  border-color: #f29547;
 }
 
 .hero-divider-fluke {
-  border-top: 2px solid #ffd200;
+  border-color: #ffd200;
+}
+
+.hero-divider-ip {
+  border-color: #f37742;
 }
 
 .hero-divider:last-of-type {
@@ -1096,7 +1105,7 @@ html {
 /* full-width */
 
 .full-width-image {
-  min-height: 276px;                                  
+  min-height: 240px;                                  
 }
 
 /* typography */
@@ -1117,12 +1126,13 @@ html {
   padding: 30px 0 0 0;
 }
 
-.hero-fluke {
+.hero-fluke, .hero-ip {
   padding: 30px 0;  
 }
 
 .hero-name {
   margin-top: 29px;
+  font-size: rem-calc(48);
 }
 
 /* recap */
@@ -1184,6 +1194,10 @@ html {
     line-height: 1.2;
 }
 
+.main-description {
+    margin-top: -6px;
+}
+
 .router-image-onhover {
   display: none;
 }
@@ -1203,11 +1217,11 @@ html {
 }
 
 .router-navigation-block-title {
-  margin-bottom: -10px;
+  margin-bottom: 0px;
 }
 
 .router .router-navigation .router-navigation-block:hover .router-navigation-block-title {
-    margin-bottom: -10px
+    margin-bottom: 0px
 }
 
   } 
@@ -1269,8 +1283,8 @@ html {
   padding: 30px 0 0 0;
 }
 
-.hero-abm {
-  padding: 30px 0 0 0;
+.hero-fluke, .hero-ip {
+  padding: 30px 0;
 }
 
 .hero-name {
@@ -1334,6 +1348,10 @@ html {
     font-family: 'Titling Gothic FB Narr Bold';
     font-size: rem-calc(60);
     line-height: 1.1;
+}
+
+.main-description {
+    margin-top: -10px;
 }
 
 .router-image-onhover {
@@ -1403,12 +1421,8 @@ html {
   min-height: 440px; 
 }
 
-.hero-abm {
+.hero-abm, .hero-fluke, .hero-ip {
   padding: 140px 0;  
-}
-
-.hero-fluke {
-  padding: 140px 0;
 }
 
 .hero-name {
@@ -1548,7 +1562,30 @@ html {
     line-height: 1.2;
 }
 
+.main-description {
+    margin-top: -20px;
+}
+
 
 
 }
 
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) { 
+  
+/* Retina Images */
+.hero-srs {
+  background-image: url("../assets/images/hero-seagate-x2.jpg");
+}
+
+.hero-ip {
+  background-image: url("../assets/images/hero-iron-point-x2.jpg");
+}
+
+
+}
