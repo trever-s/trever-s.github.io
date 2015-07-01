@@ -181,6 +181,18 @@ a:active.button.large {
   border: 1px solid #ccc;
 }
 
+.exhibit-icon {
+  margin-top: -6px;
+}
+
+.exhibit-circle {
+  background: $srs;
+  border-radius: 75px;
+  width: 110px;
+  height: 110px;
+  padding: 0px;
+  margin-top: 10px;
+}
 
 /* Webtype */
 .titlinggothicfbextendedthin {
@@ -191,18 +203,6 @@ a:active.button.large {
 
 .titlinggothicfbnarrlight {
   font-family: 'Titling Gothic FB Narr Light';
-  font-style: normal;
-  font-weight: normal;
-}
-
-.titlinggothicfbnarrowblack {
-  font-family: 'Titling Gothic FB Narr Blk';
-  font-style: normal;
-  font-weight: normal;
-}
-
-.titlinggothicfbnarrowthin {
-  font-family: 'Titling Gothic FB Narr Thin';
   font-style: normal;
   font-weight: normal;
 }
@@ -513,6 +513,25 @@ a:active.button.large {
   font-size: rem-calc(42);
   border: none;
   padding: 0;
+}
+
+.subheading-icon {
+  text-transform: uppercase;
+  font-size: rem-calc(16);
+  margin-top: 60px;
+  font-family: 'Titling Gothic FB Narr Bold';
+}
+
+.subheading-icon-small {
+  text-transform: uppercase;
+  font-size: rem-calc(16);
+  margin-top: 40px;
+  font-family: 'Titling Gothic FB Narr Bold';
+  color: $black;
+}
+
+h2 + p {
+  margin-top: 0px !important;
 }
 
 .subheading {
