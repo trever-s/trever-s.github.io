@@ -90,6 +90,7 @@ module.exports = function(grunt) {
           'about/index.html',
           'portfolio/**',
           'contact/index.html',
+          'thanks/**',
           'trever/index.html',
           '_layouts/**',
           '_posts/**',
