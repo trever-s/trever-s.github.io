@@ -12,8 +12,13 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Base Style */
 html { 
-  text-rendering:optimizeLegibility;
-  -moz-font-feature-settings:'liga', 'kern';
+  text-rendering: optimizeLegibility;
+  -moz-font-feature-settings: "liga" 0, "kern";
+  -moz-font-feature-settings: "kern=1";
+  -ms-font-feature-settings: "liga" 0, "kern";
+  -o-font-feature-settings: "liga" 0, "kern";
+  -webkit-font-feature-settings: "liga" 0, "kern";
+  font-feature-settings: "liga" 0, "kern";  
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing:grayscale;
 }
@@ -221,7 +226,13 @@ a:active.button.large {
 }
 
 
-
+.smcp {  
+  font-feature-settings: "smcp" on, "c2sc";
+  -moz-font-feature-settings: "smcp" on, "c2sc";
+  -webkit-font-feature-settings: "smcp" on, "c2sc";
+  // text-transform: lowercase;
+  letter-spacing: 0.05em;
+}
 
 
 
@@ -1209,6 +1220,10 @@ html {
 
 .subheading-icon {
   margin: 16px 0 -12px;
+}
+
+.box {
+  color: red !important;
 }
 
 /* images */
