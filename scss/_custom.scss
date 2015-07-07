@@ -44,7 +44,7 @@ a:active {
 /* header */
 
 .name {
-  font-family: 'Titling Gothic FB Narr Bold';
+  font-family: 'Titling Gothic FB Narr';
   line-height: 1;
 }
 
@@ -207,11 +207,12 @@ a:active.button.large {
   font-weight: normal;
 }
 
-.titlinggothicfbnarr {
-  font-family: 'Titling Gothic FB Narr Bold';
+.titlinggothicfbnarrbold {
+  font-family: "Titling Gothic FB Narr";
   font-style: normal;
-  font-weight: normal;
+  font-weight: bold;
 }
+
 
 .titlinggothicfbskylinelight {
   font-family: 'TitlingGothicFBSkylineLt';
@@ -500,7 +501,7 @@ a:active.button.large {
   font-family: 'Titling Gothic FB Narr Light'
 }
 .bold {
-  font-family: 'Titling Gothic FB Narr Bold'
+  font-family: 'Titling Gothic FB Narr'
 }
 .wide {
   font-family: 'Titling Gothic FB Ext Thin'
@@ -524,14 +525,14 @@ a:active.button.large {
 .subheading-icon {
   text-transform: uppercase;
   font-size: rem-calc(16);
-  font-family: 'Titling Gothic FB Narr Bold';
+  font-family: 'Titling Gothic FB Narr';
 }
 
 .subheading-icon-small {
   text-transform: uppercase;
   font-size: rem-calc(16);
   margin-top: 40px;
-  font-family: 'Titling Gothic FB Narr Bold';
+  font-family: 'Titling Gothic FB Narr';
   color: $black;
 }
 
@@ -786,7 +787,7 @@ p:last-of-type {
 }
 
 .recap-list-title {
-  font-family: 'Titling Gothic FB Narr Bold';
+  font-family: 'Titling Gothic FB Narr';
   text-transform: uppercase;
   font-size: rem-calc(15);
 }
@@ -1131,7 +1132,7 @@ z-index: 2;
 }
 
 .footer-text {
-  font-family: 'Titling Gothic FB Narr Bold';
+  font-family: 'Titling Gothic FB Narr';
   line-height: 1.4;
 }
 
@@ -1302,7 +1303,7 @@ html {
 
 /* spread */
 .main-title {
-    font-family: 'Titling Gothic FB Narr Bold';
+    font-family: 'Titling Gothic FB Narr';
     font-size: rem-calc(50);
     line-height: 1.2;
 }
@@ -1487,7 +1488,7 @@ html {
 /* spread */
 
 .main-title {
-    font-family: 'Titling Gothic FB Narr Bold';
+    font-family: 'Titling Gothic FB Narr';
     font-size: rem-calc(60);
     line-height: 1.1;
 }
@@ -1728,7 +1729,7 @@ html {
 }
 
 .main-title {
-    font-family: 'Titling Gothic FB Narr Bold';
+    font-family: 'Titling Gothic FB Narr';
     font-size: rem-calc(70);
     line-height: 1.2;
 }

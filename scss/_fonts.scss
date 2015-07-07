@@ -1,83 +1,14 @@
-@font-face {
+@font-face
+{
   font-family: 'TiemposText';
-  src: url("/assets/fonts/tiempos-woff-regular-1.woff") format("woff");
-  font-weight: normal;
   font-style: normal;
+  font-weight: normal;
+  src: url("/assets/fonts/TiemposTextWeb-Regular.woff") format("woff");
 }
-
-@font-face {
-  font-family: 'CondensedLight';
-  src: url("assets/fonts/TitlingGothicFBCondLight.woff") format("woff");
+@font-face
+{
+  font-family: 'TiemposText';
+  font-style: italic;
   font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'ExtendedLight';
-  src: url("/assets/fonts/TitlingGothicFBExtendedLight.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'ExtendedThin';
-  src: url("/assets/fonts/TitlingGothicFBExtendedThin.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'NarrowBlack';
-  src: url("/assets/fonts/TitlingGothicFBNarrowBlack.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'NarrowLight';
-  src: url("/assets/fonts/TitlingGothicFBNarrowLight.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'NarrowThin';
-  src: url("/assets/fonts/TitlingGothicFBNarrowThin.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Titling Gothic FB Narr Bold';
-  src: url("/assets/fonts/TitlingGothicFBNarrowBold.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'NormalBlack';
-  src: url("/assets/fonts/TitlingGothicFBNormalBlack.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'NormalThin';
-  src: url("/assets/fonts/TitlingGothicFBNormalThin.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'SkylineThin';
-  src: url("/assets/fonts/TitlingGothicFBSkylineThin.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'WideMedium';
-  src: url("/assets/fonts/TitlingGothicFBWideMedium.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
+  src: url("/assets/fonts/TiemposTextWeb-RegularItalic.woff") format("woff");
 }
