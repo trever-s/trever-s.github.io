@@ -54,11 +54,11 @@ module.exports = function(grunt) {
            'bower_components/foundation/js/foundation.min.js',
            'bower_components/foundation/js/foundation.interchange.js',
            'js/app.js',
-           'bower_components/modernizr/modernizr.js',
-           'js/jquery.easing.min.js',
-           'js/customs.js',
-           'js/scripts.js',
-           'js/active_section_scrolling.js'
+           'bower_components/modernizr/modernizr.js'
+           // 'js/jquery.easing.min.js',
+           // 'js/customs.js',
+           // 'js/scripts.js',
+           // 'js/active_section_scrolling.js'
          ]
        }
      }
