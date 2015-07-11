@@ -1,17 +1,17 @@
 <!DOCTYPE html>
-<html class="no-js" lang="en">
+<html class='no-js' lang='en'>
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset='utf-8' />
+    <meta name='viewport' content='width=device-width, initial-scale=1.0' />
     <title>{{ page.title }}</title>
-    <link rel="stylesheet" href="">
+    <link rel='stylesheet' href=''>
   </head>
 {% include header.html %}
-<div class="post">
-  <div class="row">
-    <div class="large-12 large-offset-0 medium-10 medium-offset-1 columns post">
+<div class='post'>
+  <div class='row'>
+    <div class='large-12 large-offset-0 medium-10 medium-offset-1 columns post'>
         <article>
-          <h4 class="show-for-medium-up">
+          <h4 class='show-for-medium-up'>
             xxx
           </h4>
           <h1>
@@ -19,36 +19,36 @@
           </h1>
     </div>
   </div>  
-  <div class="row">
-    <div class="large-8 large-offset-2 medium-8 medium-offset-2 columns post">
+  <div class='row'>
+    <div class='large-8 large-offset-2 medium-8 medium-offset-2 columns post'>
       <h2>
-        Written by <a href="" title="{{ page.author }}">{{ page.author }}</a> on 
+        Written by <a href='' title='{{ page.author }}'>{{ page.author }}</a> on 
         {{ page.date | date: '%B %d, %Y' }}
       </h2>
       {{ content }}
-      <div class="row">
+      <div class='row'>
         <hr>
-        <div class="large-6 small-6 columns text-left next-up">
+        <div class='large-6 small-6 columns text-left next-up'>
           {% if page.previous %}
-          <small class="next-post">Previous</small>
+          <small class='next-post'>Previous</small>
           {% endif %}
-            <a class="next-link" rel="next" href="{{page.previous.url}}">{{{page.previous.title}}</a>
+            <a class='next-link' rel='next' href='{{page.previous.url}}'>{{{page.previous.title}}</a>
         </div>
-        <div class="large-6 small-6 columns text-right next-up">
+        <div class='large-6 small-6 columns text-right next-up'>
           {% if page.next %}
-          <small class="next-post">Next Up</small>
+          <small class='next-post'>Next Up</small>
           {% endif %}
-          <span class="next-link">
-            <a class="next-link" rel="next" href="{{page.next.url}}">{{page.next.title}}</a>
+          <span class='next-link'>
+            <a class='next-link' rel='next' href='{{page.next.url}}'>{{page.next.title}}</a>
           </span>
         </div>
       </div>
       </article>
       <hr>
-      <div id="disqus_thread"></div>
+      <div id='disqus_thread'></div>
       </div>
   </div>
-  <script type="text/javascript">
+  <script type='text/javascript'>
       var disqus_shortname = 'xxx';
       (function() {
           var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
@@ -56,5 +56,5 @@
           (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
       })();
   </script>
-  <noscript>Please enable JavaScript to view Iron-Point's blog <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  <noscript>Please enable JavaScript to view Iron-Point's blog <a href='http://disqus.com/?ref_noscript'>comments powered by Disqus.</a></noscript>
   {% include footer.html %}
