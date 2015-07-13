@@ -542,7 +542,6 @@ a:active.button.large {
 .subheading-icon-small {
   text-transform: uppercase;
   font-size: rem-calc(16);
-  margin-top: 40px;
   font-family: 'Titling Gothic FB Narr', 'Helvetica Neue', Helvetica, sans-serif;
   color: $black;
 }
@@ -564,6 +563,7 @@ h2 + p {
   font-family: 'Titling Gothic FB Narr Light', 'Helvetica Neue', Helvetica, sans-serif;
   font-size: rem-calc(26);
   line-height: 1;
+  text-shadow: 0 0 30px rgba(0,0,0,0.5);
 }
 
 .text-callout {
@@ -629,7 +629,7 @@ p:last-of-type {
 
 .hero-name {
   font-size: rem-calc(75);
-  margin: 31px 0 8px;
+  text-shadow: 0 0 30px rgba(0,0,0,0.5);
 }
 
 .hero-divider {
@@ -1613,7 +1613,7 @@ html {
 }
 
 .hero-name {
-  margin: 31px 0 8px;
+  margin: 18px 0 20px;
 }
 
 /* headings */
@@ -1629,7 +1629,7 @@ html {
 }
 
 .subheading-icon {
-  margin-top: 60px;
+  margin-top: 54px;
 }
 
 /* images */
