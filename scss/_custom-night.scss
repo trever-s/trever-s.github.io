@@ -40,11 +40,11 @@ a:visited {
 }
 
 a:hover {
-  color: $red;
+  color: $blue;
 }
 
 a:active {
-  color: $red;
+  color: $blue;
 }
 
 /* header */
@@ -94,7 +94,7 @@ a.cover-link, a.cover-link:visited, a.cover-link:hover, a.cover-link:active {
 
 
 a.active {
-  border-bottom: 2px solid $red;
+  border-bottom: 2px solid $blue;
   padding-bottom: 6px;
   color: $white;
   text-decoration: none;
@@ -1150,7 +1150,7 @@ z-index: 2;
 /* form */
 
 button, button:hover, button:focus, .button:hover, .button:focus {
-  background-color: $red;
+  background-color: $blue;
   border: none;
 }
 
