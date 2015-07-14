@@ -26,25 +26,25 @@ html {
 /* global */
 body {
   font: rem-calc(19) 'TiemposText', Georgia, serif;
-  color: $black;
-  background: $white;
+  color: $white;
+  background: $night-black;
 }
 
 /* links */
 a:link {
-  color: $black;
+  color: $white;
 }
 
 a:visited {
-  color: $black;
+  color: $white;
 }
 
 a:hover {
-  color: $blue;
+  color: $red;
 }
 
 a:active {
-  color: $blue;
+  color: $red;
 }
 
 /* header */
@@ -62,7 +62,7 @@ a:active {
 
 a.cover-link, a.cover-link:visited, a.cover-link:hover, a.cover-link:active {
   text-decoration: none;
-  color: $black;
+  color: $white;
 }
 
 /* nav */
@@ -87,21 +87,21 @@ a.cover-link, a.cover-link:visited, a.cover-link:hover, a.cover-link:active {
 }
 
 // .dot {
-//   color: $black;
+//   color: $white;
 //   display: inline;
 //   font-size: rem-calc(30);
 // }
 
 
 a.active {
-  border-bottom: 2px solid $blue;
+  border-bottom: 2px solid $red;
   padding-bottom: 6px;
-  color: $black;
+  color: $white;
   text-decoration: none;
 }
 
 a.inactive {
-  color: $black;
+  color: $white;
   border: none;
   text-decoration: none;
 }
@@ -110,8 +110,8 @@ a.inactive {
 
 .portfolio {
   height: 400px;
-  background: $black;
-  color: $white;
+  background: $white;
+  color: $night-black;
   padding: 60px 0;
 }
 
@@ -128,24 +128,24 @@ a.inactive {
 }
 
 .portfolio p {
-  border-top: 1px solid $black;
+  border-top: 1px solid $white;
   padding-top: 10px;
   margin-top: 10px;
 }
 
 a.button.large {
-  color: $black;
+  color: $white;
   margin: 60px 0;
-  background: $blue;
+  background: $night-black;
   transition: all 300ms ease;
 }
 
 a:hover.button.large {
-  color: $white;
+  color: $night-black;
 }
 
 a:active.button.large {
-  background: $black;
+  background: $white;
   transition: all 100ms ease;
 }
 
@@ -184,7 +184,6 @@ a:active.button.large {
 
 .exhibit {
   margin-top: 36px;
-  border: 1px solid #ccc;
 }
 
 .exhibit-icon {
@@ -544,7 +543,7 @@ a:active.button.large {
   text-transform: uppercase;
   font-size: rem-calc(16);
   font-family: 'Titling Gothic FB Narr', 'Helvetica Neue', Helvetica, sans-serif;
-  color: $black;
+  color: $white;
 }
 
 .subheading-small {
@@ -553,7 +552,7 @@ a:active.button.large {
   margin-top: 40px;
   margin-bottom: 9px;
   font-family: 'Titling Gothic FB Narr', 'Helvetica Neue', Helvetica, sans-serif;
-  color: $black;
+  color: $white;
 }
 
 h2 + p {
@@ -660,13 +659,13 @@ p:last-of-type {
 .portfolio-figcaption {
   margin-top: 10px;
   line-height: 1.4;
-  color: #696969;
+  color: #aaa;
 }
 
 .portfolio-figcaption-credit {
   margin-top: 2px;
   line-height: 1.4;
-  color: #999;
+  color: #aaa;
   font-size: rem-calc(13);
 }
 
@@ -710,8 +709,8 @@ p:last-of-type {
 
 /* Testimonial */
 .portfolio-big-pullquote-middle {
-  background: $black;
-  color: $white;
+  background: $white;
+  color: $night-black;
   padding: 50px 80px 40px 80px;
 }
 
@@ -721,7 +720,7 @@ p:last-of-type {
   height: 0;
   border-top-width: 35px;
   border-top-style: solid;
-  border-top-color: $black;
+  border-top-color: $white;
   border-right: 50px solid transparent !important;
   position: relative;
   top: 75px;
@@ -742,7 +741,7 @@ p:last-of-type {
 }
 
 .about-blockquote:before {
-  color: $blue;
+  color: $night-black;
   content: open-quote;
   font-size: rem-calc(50);
   line-height: 0em;
@@ -770,7 +769,7 @@ p:last-of-type {
 }
 
 .recap-srs {
-  color: $black;
+  color: $white;
   padding: 90px 0;
 }
 
@@ -780,7 +779,7 @@ p:last-of-type {
 }
 
 .recap a {
-  color: $black;
+  color: $white;
 }
 
 .recap-title {
@@ -790,7 +789,7 @@ p:last-of-type {
 .recap-divider {
   width: 40%;
   border: 0;
-  border-top: 2px solid $black;
+  border-top: 2px solid $white;
 }
 
 .recap-list {
@@ -812,8 +811,8 @@ p:last-of-type {
 /* Tools */
 
 .tools {
-  background: $black;
-  color: $white;
+  background: $white;
+  color: $night-black;
   padding: 80px 0 100px;
 }
 
@@ -830,7 +829,7 @@ p:last-of-type {
 }
 
 .tools-title {
-  color: $white;
+  color: $night-black;
 }
 
 .tools-a, .tools-b, .tools-c {
@@ -852,14 +851,14 @@ p:last-of-type {
   font-family: 'Titling Gothic FB Narr Light', 'Helvetica Neue', Helvetica, sans-serif;
   font-size: rem-calc(21);
   margin: 10px 0 12px;
-  color: $white;
+  color: $night-black;
 }
 
 /* Stats */
 
 .stats {
-  background: $black;
-  color: $white;
+  background: $white;
+  color: $night-black;
   padding: 80px 0 100px;
 }
 
@@ -873,7 +872,7 @@ p:last-of-type {
 
 .stats-title {
   margin-bottom: 40px;
-  color: $white;
+  color: $night-black;
 }
 
 .stats-a, .stats-b, .stats-c {
@@ -894,8 +893,8 @@ p:last-of-type {
 /* Carousel */
 
 .carousel {
-  background: $black;
-  color: $white;
+  background: $white;
+  color: $night-black;
   padding: 100px 0 100px;
 }
 
@@ -1106,11 +1105,11 @@ z-index: 2;
 }
 
 .footer a {
-  color: $black;
+  color: $white;
 }
 
 .footer-nav {
-  color: $black;
+  color: $white;
   display: block;
   line-height: 1.4;
   text-align: left;
@@ -1147,6 +1146,13 @@ z-index: 2;
 .footer-text {
   font-family: 'Titling Gothic FB Narr', 'Helvetica Neue', Helvetica, sans-serif;
   line-height: 1.4;
+}
+
+/* form */
+
+button, button:hover, button:focus, .button:hover, .button:focus {
+  background-color: $red;
+  border: none;
 }
 
 /* tiny screens */
@@ -1235,7 +1241,7 @@ html {
 }
 
 /* contact */
-.contact-night, .contact-night-figcaption, .contact-day-figcaption {
+.contact-day, .contact-day-figcaption, .contact-night-figcaption {
   display: none;
 }
 
@@ -1405,8 +1411,8 @@ html {
 
 .heading-callout {
   font-size: rem-calc(32);
-  // border-top: 1px solid $black;
-  // border-bottom: 1px solid $black;
+  // border-top: 1px solid $white;
+  // border-bottom: 1px solid $white;
   padding: 0;
 }
 
@@ -1415,7 +1421,7 @@ html {
 }
 
 /* contact */
-.contact-night, .contact-night-figcaption, .contact-day-figcaption {
+.contact-day, .contact-day-figcaption, .contact-night-figcaption {
   display: none;
 }
 
@@ -1588,17 +1594,13 @@ html {
 }
 
 /* contact */
-.contact-day-figcaption {
+.contact-night-figcaption {
   margin-top: 10px;
   line-height: 1.4;
   display: block;
   font-size: rem-calc(12);
   width: 55%;
-  color: #696969
-}
-
-.contact-night, .contact-night-figcaption {
-  display: none;
+  color: #aaa;
 }
 
 /* hero */
@@ -1657,8 +1659,8 @@ html {
 /* spur */
 .spur {
   text-align: center;
-  background: $black;
-  color: $white;
+  background: $white;
+  color: $night-black;
   padding: 90px 0;
 }
 
