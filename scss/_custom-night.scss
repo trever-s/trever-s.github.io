@@ -594,7 +594,7 @@ p:last-of-type {
   margin-top: 18px !important;
 }
 
-/* Hero */
+/* ` */
 .hero-srs {
   background-image: url('../assets/images/hero-seagate.jpg');
   color: $white;
@@ -629,7 +629,6 @@ p:last-of-type {
   width: 10%;
   margin: 0 auto;
   border: 0;
-  margin-top: 20px;
   border-top-width: 2px;
   border-top-style: solid;
 }
@@ -1264,8 +1263,12 @@ html {
 }
 
 .hero-name {
-  margin-top: 29px;
+  margin: 14px 0;
   font-size: rem-calc(48);
+}
+
+.hero-divider {
+  margin-top: 20px;
 }
 
 /* recap */
@@ -1450,7 +1453,11 @@ html {
 }
 
 .hero-name {
-  margin-top: 29px;
+  margin: 14px 0;
+}
+
+.hero-divider {
+  margin-top: 20px;
 }
 
 /* recap */
@@ -1614,6 +1621,10 @@ html {
 
 .hero-name {
   margin: 18px 0 20px;
+}
+
+.hero-divider {
+  margin-top: 20px;
 }
 
 /* headings */
