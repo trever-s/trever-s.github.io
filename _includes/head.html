@@ -10,19 +10,19 @@
   <script>
   function getStylesheet() {
       var currentTime = new Date().getHours();
-      if (0 <= currentTime&&currentTime <= 6) {
-       document.write("<link rel='stylesheet' href='{{ site.baseurl }}/css/styles-night.css' type='text/css'>");
-      }
-      if (6 <= currentTime&&currentTime < 24) {
+      // if (0 <= currentTime&&currentTime <= 1) {
+      //  document.write("<link rel='stylesheet' href='{{ site.baseurl }}/css/styles-night.css' type='text/css'>");
+      // }
+      if (0 <= currentTime&&currentTime < 24) {
        document.write("<link rel='stylesheet' href='{{ site.baseurl }}/css/styles.css' type='text/css'>");
       }
   }
   getStylesheet();
   </script>
   <link href='//cloud.webtype.com/css/1f95b8e0-7dde-4565-945f-112863cf1bfb.css' rel='stylesheet' type='text/css' />
-  <link rel="apple-touch-icon-precomposed" href="/assets/images/favicon-152.png">
-  <meta name="msapplication-TileColor" content="#393939">
-  <meta name="msapplication-TileImage" content="/assets/images/favicon-144.png">
+  <link rel='apple-touch-icon-precomposed' href='/assets/images/favicon-152.png'>
+  <meta name='msapplication-TileColor' content='#393939'>
+  <meta name='msapplication-TileImage' content='/assets/images/favicon-144.png'>
   <!-- Analytics -->
   <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

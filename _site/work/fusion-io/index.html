@@ -1,18 +1,60 @@
----
-layout: default
-title: Portfolio - Fusion-io
-description: Rethinking webinar registration for Fusion-io
----
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <meta charset='utf-8' />
+  <title>Portfolio - Fusion-io</title>
+  <meta name='author' content='Trever Santora' />
+  <meta name='viewport' content='width=device-width, initial-scale=1.0' />
+  <meta name='robots' content='index, follow' />
+  <meta name='description' content='Rethinking webinar registration for Fusion-io' />
+  <script>
+  function getStylesheet() {
+      var currentTime = new Date().getHours();
+      // if (0 <= currentTime&&currentTime <= 1) {
+      //  document.write("<link rel='stylesheet' href='/css/styles-night.css' type='text/css'>");
+      // }
+      if (0 <= currentTime&&currentTime < 24) {
+       document.write("<link rel='stylesheet' href='/css/styles.css' type='text/css'>");
+      }
+  }
+  getStylesheet();
+  </script>
+  <link href='//cloud.webtype.com/css/1f95b8e0-7dde-4565-945f-112863cf1bfb.css' rel='stylesheet' type='text/css' />
+  <link rel='apple-touch-icon-precomposed' href='/assets/images/favicon-152.png'>
+  <meta name='msapplication-TileColor' content='#393939'>
+  <meta name='msapplication-TileImage' content='/assets/images/favicon-144.png'>
+  <!-- Analytics -->
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-16462122-1', 'auto');
+    ga('send', 'pageview');
+  </script>
+</head>
+<body>
+<!-- Header -->
+<div class='row'>
+  <div class='small-12 columns medium-6 large-6'>
+    <a class='cover-link' href='/' title='Trever Santora'>
+    <div class='header'>
+      <h1 class='name text-upper'>Trever Santora</h1>
+      <h2 class='title text-lower'>UX Designer</h2>
+    </div>
+    </a>
+  </div>
   <div class='large-6 medium-6 small-12 text-upper columns'>
     <ul class='nav'>
       <li>
-        <a class='inactive' href='/'>Portfolio</a>
+        <a class='active' href='/' title='Work'>Work</a>
       </li>
       <li>
-        <a class='inactive' href='/about'>About</a>
+        <a class='inactive' href='/about' title='About'>About</a>
       </li>
       <li>
-        <a class='inactive' href='/contact'>Contact</a>
+        <a class='inactive' href='/contact' title='Contact'>Contact</a>
       </li>
     </ul>
   </div>
@@ -33,10 +75,10 @@ description: Rethinking webinar registration for Fusion-io
 <div class='row recap recap-abm bump-90'>
   <div class='small-10 large-10 medium-centered large-centered columns'>
     <div class='row'>
-      <div class='small-10 medium-3 large-3 columns'>
+      <div class='small-10 medium-3 large-2 columns'>
         <h1 class='heading recap-title'>Team</h1>
       </div>
-      <div class='small-10 medium-3 large-3 columns'>
+      <div class='small-10 medium-3 large-3 columns recap-push'>
         <ul class='recap-list'>
           <li class='recap-list-title'>Agency</li>
           <li class='recap-last-list-item'>Iron-Point</li>
@@ -110,7 +152,7 @@ description: Rethinking webinar registration for Fusion-io
 <!-- Exhibit -->
 <div class='row'>
   <div class='medium-10 medium-centered large-10 columns'>
-    <img class='exhibit' src='/assets/images/exhibit-io-recommendations-x2.png'>
+    <img class='exhibit' src='/assets/images/exhibit-io-recommendations-x2.png' title="Recommendations">
   </div>
 </div>
 <div class='row bump-90'>
@@ -132,3 +174,33 @@ description: Rethinking webinar registration for Fusion-io
     <p>We established A/B testing parameters for the newly designed webinar page as well as KPIs for monitoring the success of early and long-term customer engagement.</p>
   </div>
 </div>
+<!-- Footer -->
+<div class='row'>
+  <div class='small-12 large-10 large-centered columns footer bump-60'>
+    <div class='row'>
+      <div class='small-12 large-6 columns'>
+        <ul class='footer-nav'> 
+          <li class='footer-nav-items'>
+            <a href='https://www.twitter.com/treversantora' title='Twitter'>Twitter</a>
+          </li>
+          <li class='footer-nav-items'>
+            <a href='https://www.quora.com/Trever-Santora' title='Quora'>Quora</a> 
+          </li>
+          <li class='footer-nav-items'>
+            <a href='https://www.linkedin.com/in/treversantora' title='LinkedIn'>LinkedIn</a>
+          </li>
+        </ul>
+      </div>
+      <div class='small-12 large-6 columns footer-credits'>
+        <span class='footer-copyright'>&copy; </span><span>2015</span>
+        <span class='footer-text'>
+          <a class='cover-link' href='/' title='Work'>Trever Santora</a>
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Javascript -->
+<script src='/js/uglified/output.min.js'></script>
+</body>
+</html>
