@@ -86,7 +86,7 @@ a.cover-link, a.cover-link:visited, a.cover-link:hover, a.cover-link:active {
 }
 
 a.active {
-  border-bottom: 2px solid $blue;
+  border-bottom: 2px solid $white;
   padding-bottom: 6px;
   color: $white;
   text-decoration: none;
@@ -125,14 +125,14 @@ a.inactive {
 }
 
 a.button.large {
-  color: $white;
+  color: $black;
   margin: 60px 0;
-  background: $night-black;
+  background: $white;
   transition: all 300ms ease;
 }
 
 a:hover.button.large {
-  color: $night-black;
+  color: $black;
 }
 
 a:active.button.large {
@@ -525,7 +525,6 @@ a:active.button.large {
 }
 
 .subheading-icon {
-  text-transform: uppercase;
   font-size: rem-calc(16);
   font-family: 'Titling Gothic FB Narr', 'Helvetica Neue', Helvetica, sans-serif;
 }
@@ -538,7 +537,6 @@ a:active.button.large {
 }
 
 .subheading-small {
-  text-transform: uppercase;
   font-size: rem-calc(16);
   margin-top: 40px;
   margin-bottom: 9px;
@@ -790,7 +788,6 @@ p:last-of-type {
 
 .recap-list-title {
   font-family: 'Titling Gothic FB Narr', 'Helvetica Neue', Helvetica, sans-serif;
-  text-transform: uppercase;
   font-size: rem-calc(15);
 }
 
@@ -801,8 +798,8 @@ p:last-of-type {
 /* Tools */
 
 .tools {
-  background: $white;
-  color: $night-black;
+  background: $black;
+  color: $white;
   padding: 80px 0 100px;
 }
 
@@ -819,7 +816,7 @@ p:last-of-type {
 }
 
 .tools-title {
-  color: $night-black;
+  color: $white;
 }
 
 .tools-a, .tools-b, .tools-c {
@@ -841,7 +838,7 @@ p:last-of-type {
   font-family: 'Titling Gothic FB Narr Light', 'Helvetica Neue', Helvetica, sans-serif;
   font-size: rem-calc(21);
   margin: 10px 0 12px;
-  color: $night-black;
+  color: $white;
 }
 
 /* Stats */
@@ -1144,7 +1141,8 @@ z-index: 2;
 /* form */
 
 button, button:hover, button:focus, .button:hover, .button:focus {
-  background-color: $blue;
+  background-color: $white;
+  color: $black;
   border: none;
 }
 
