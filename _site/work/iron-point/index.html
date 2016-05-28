@@ -10,10 +10,10 @@
   <script>
   function getStylesheet() {
       var currentTime = new Date().getHours();
-      // if (0 <= currentTime&&currentTime <= 1) {
-      //  document.write("<link rel='stylesheet' href='/css/styles-night.css' type='text/css'>");
-      // }
-      if (0 <= currentTime&&currentTime < 24) {
+      if (0 <= currentTime&&currentTime <= 7) {
+       document.write("<link rel='stylesheet' href='/css/styles-night.css' type='text/css'>");
+      }
+      if (7 <= currentTime&&currentTime < 24) {
        document.write("<link rel='stylesheet' href='/css/styles.css' type='text/css'>");
       }
   }
