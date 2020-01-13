@@ -260,13 +260,6 @@ a.cover-link, a.cover-link:visited, a.cover-link:hover, a.cover-link:active {
 
 /* Work Card */
 
-.parent:hover .child {
-    opacity: .25;
-}
-.parent .child:hover {
-    opacity: 1;
-}
-
 .work-card-parent:hover .work-card-2 {
   opacity: .75;
 }
@@ -346,7 +339,6 @@ transition: .2s;
     width: 36px;
     height: auto;
     position: absolute;
-    bottom: -2.67em;
     left: 0.23em;
 }
 
@@ -1125,7 +1117,6 @@ p:last-of-type {
   padding: 0;
   margin: 0.45rem 0.4rem 1.5rem 0;
   font-family: stratos,Georgia,sans-serif;
-  font-size: 1.3rem;
   float: left;
   line-height: 1.4;
   font-weight: 200;
@@ -2090,7 +2081,8 @@ html {
 
 .shout-5 {
   font-size: 50px;
-  margin-top: 10px;
+  margin-top: 0;
+  margin-bottom: 10px;
 }
 
 .shout-4 {
@@ -2106,6 +2098,18 @@ html {
   padding: 0;
   font-size: 1.5rem;
   margin-bottom: 60px;
+ }
+
+ .biographs {
+  font-size: 1.2rem
+ }
+
+ .drop {
+  font-size: 1.5rem;
+ }
+
+ .more-arrow svg {
+  bottom: -3.05em;
  }
 
   } 
@@ -2367,6 +2371,7 @@ html {
 .shout-5 {
   font-size: 60px;
   margin-top: 10px;
+  margin-bottom: 0;
 }
 
 .shout-4 {
@@ -2380,6 +2385,18 @@ html {
 .shout-1 {
   font-size: 1.85rem;
 }
+
+ .biographs {
+  font-size: 1rem
+ }
+
+ .drop {
+  font-size: 1.3rem;
+ }
+
+ .more-arrow svg {
+  bottom: -2.67em;
+ }
 
   }
 
@@ -2797,9 +2814,12 @@ html {
   margin-bottom: 30px;
 }
 
+ .biographs {
+  font-size: 1rem
+ }
 
-.shout-1 { 
-  
+ .drop {
+  font-size: 1.3rem;
  }
 
   }
