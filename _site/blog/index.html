@@ -11,7 +11,7 @@
   function getStylesheet() {
       var currentTime = new Date().getHours();
       if (0 <= currentTime&&currentTime <= 7) {
-       document.write("<link rel='stylesheet' href='/css/styles-night.css' type='text/css'>");
+       document.write("<link rel='stylesheet' href='/css/styles.css' type='text/css'>");
       }
       if (7 <= currentTime&&currentTime < 24) {
        document.write("<link rel='stylesheet' href='/css/styles.css' type='text/css'>");
@@ -19,7 +19,14 @@
   }
   getStylesheet();
   </script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
   <link href='//cloud.webtype.com/css/1f95b8e0-7dde-4565-945f-112863cf1bfb.css' rel='stylesheet' type='text/css' />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.typekit.net/yhu0tzs.css">
   <link rel='apple-touch-icon-precomposed' href='/assets/images/favicon-152.png'>
   <meta name='msapplication-TileColor' content='#393939'>
   <meta name='msapplication-TileImage' content='/assets/images/favicon-144.png'>
@@ -36,15 +43,7 @@
 </head>
 <body>
 <!-- Header -->
-<div class='row'>
-  <div class='small-12 columns medium-6 large-6'>
-    <a class='cover-link' href='/' title='Trever Santora'>
-    <div class='header'>
-      <h1 class='name text-upper'>Trever Santora</h1>
-      <h2 class='title text-lower'>UX Designer</h2>
-    </div>
-    </a>
-  </div>
+
   <div class='large-6 medium-6 small-12 text-upper columns'>
     <ul class='nav'>
       <li>
@@ -73,34 +72,52 @@
   </div>
 </div>
 <!-- Footer -->
+<div class='full-width footer-spread'>
 <div class='row'>
-  <div class='small-12 large-10 large-centered columns footer bump-60'>
+  <div class='small-12 large-10 large-centered columns footer'>
     <div class='row'>
       <div class='small-12 large-6 columns'>
         <ul class='footer-nav'> 
           <li class='footer-nav-items'>
-            <a href='https://www.twitter.com/treversantora' title='Twitter'>Twitter</a>
+            <a href='https://www.linkedin.com/in/treversantora' title='LinkedIn'>LinkedIn<span class="footer-arrow">
+              <svg class="glyph" width="30" data-attr-descent="-260" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1480 1797">
+                <path class="glyphPath" transform=" scale(1,-1)" d="M133 500h301v-300h-84v156l-212 -211l-61 60l213 213h-157v82z" fill="white"></path>
+              </svg>
+            </span></a>
           </li>
           <li class='footer-nav-items'>
-            <a href='https://www.quora.com/Trever-Santora' title='Quora'>Quora</a> 
+            <a href='https://www.instagram.com/treversantora' title='Quora'>Instagram<span class="footer-arrow">
+              <svg class="glyph" width="30" data-attr-descent="-260" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1480 1797">
+                <path class="glyphPath" transform=" scale(1,-1)" d="M133 500h301v-300h-84v156l-212 -211l-61 60l213 213h-157v82z" fill="white"></path>
+              </svg>              
+            </span></a> 
           </li>
           <li class='footer-nav-items'>
-            <a href='https://www.linkedin.com/in/treversantora' title='LinkedIn'>LinkedIn</a>
-          </li>
-          <li class='footer-nav-items'>
-            <a href='/archive' title='Archive'>Past Work</a>
+            <a href='https://www.twitter.com/treversantora' title='Twitter'>Twitter <span class="footer-arrow">
+              <svg class="glyph" width="30" data-attr-descent="-260" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1480 1797">
+                <path class="glyphPath" transform=" scale(1,-1)" d="M133 500h301v-300h-84v156l-212 -211l-61 60l213 213h-157v82z" fill="white"></path>
+              </svg>
+            </span></a>
           </li>
         </ul>
       </div>
       <div class='small-12 large-6 columns footer-credits'>
+        <span class='footer-text'>Research. Content. Design. Code. </a>
         <span class='footer-copyright'>&copy; </span>
-        <span class='footer-text'>2019 Trever Santora. All rights reserved.</a>
+        <span class='footer-text'>2020 Trever Santora.</a>
         </span>
       </div>
     </div>
   </div>
 </div>
+</div>
+
+
+
 <!-- Javascript -->
 <script src='/js/uglified/output.min.js'></script>
+<script>
+  AOS.init();
+</script>
 </body>
 </html>

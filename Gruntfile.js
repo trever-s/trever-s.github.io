@@ -86,7 +86,7 @@ module.exports = function(grunt) {
           '_config.yml',
           'index.html',
           'about/index.html',
-          'portfolio/**',
+          'work/**',
           'contact/index.html',
           'thanks/**',
           'trever/index.html',

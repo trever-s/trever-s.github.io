@@ -11,7 +11,7 @@
   function getStylesheet() {
       var currentTime = new Date().getHours();
       if (0 <= currentTime&&currentTime <= 7) {
-       document.write("<link rel='stylesheet' href='{{ site.baseurl }}/css/styles-night.css' type='text/css'>");
+       document.write("<link rel='stylesheet' href='{{ site.baseurl }}/css/styles.css' type='text/css'>");
       }
       if (7 <= currentTime&&currentTime < 24) {
        document.write("<link rel='stylesheet' href='{{ site.baseurl }}/css/styles.css' type='text/css'>");
@@ -19,7 +19,14 @@
   }
   getStylesheet();
   </script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
   <link href='//cloud.webtype.com/css/1f95b8e0-7dde-4565-945f-112863cf1bfb.css' rel='stylesheet' type='text/css' />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.typekit.net/yhu0tzs.css">
   <link rel='apple-touch-icon-precomposed' href='/assets/images/favicon-152.png'>
   <meta name='msapplication-TileColor' content='#393939'>
   <meta name='msapplication-TileImage' content='/assets/images/favicon-144.png'>
