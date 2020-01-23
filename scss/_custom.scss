@@ -131,7 +131,7 @@ a:active {
 }
 
 .shout-1, .shout-2, .shout-3 {
-  font-family: stratos,'Titling Gothic FB Narr Light','Helvetica Neue',Helvetica,sans-serif;
+  font-family: stratos-lights,'Titling Gothic FB Narr Light','Helvetica Neue',Helvetica,sans-serif;
   line-height: 1.6;
   color: #fff;
   font-weight: 400;
@@ -217,12 +217,12 @@ a:active {
 }
 
 .case-intro {
-  font-size: 21px;
   color:#fff;
-  font-family: stratos,Georgia,sans-serif;
-  font-size: 1.3rem;
-  line-height: 1.4;
-  font-weight: 200;
+  font-family: "Acumin Pro",Georgia,sans-serif;
+  font-size: 1.4rem;
+  line-height: 1.5625;
+  font-weight: 400;
+  margin-bottom: 31px;
 }
 
 .case-rationale {
@@ -238,14 +238,15 @@ a:active {
   display: block;
   text-transform: uppercase;
   letter-spacing: 1px;
+  margin-bottom: 10px;
 }
 
 .case-focus {
   color:#3c3c3c;
-  font-family: stratos,Georgia,sans-serif;
-  font-size: 1.3rem;
-  line-height: 1.5;
-  font-weight: 200;
+  font-family: "Acumin Pro",Georgia,sans-serif;
+  font-size: 1.2rem;
+  line-height: 1.5625;
+  font-weight: 400;
   margin-bottom: 44px;
 }
 
@@ -369,15 +370,16 @@ transition: .2s;
 /* BLockquote */
 
 blockquote {
-    font-size: 1.2em;
+    font-size: 1m;
     width: 100%;
     margin: 50px auto;
-    font-family: Stratos;
+    font-family: "Acumin Pro";
     color: #3c3c3c;
     position: relative;
     background: rgba(255, 193, 133, 0.15);
     border-left: 2px solid #f79c82;
     padding: 60px 20px 20px 20px;
+    line-height: 1.5625;
 }
 
 blockquote::before {
@@ -398,7 +400,7 @@ blockquote::after {
 blockquote span {
   display:block;
   color:#3c3c3c;
-  font-weight: 500;
+  font-weight: 400;
   margin-top:1em;
 }
 
@@ -433,9 +435,10 @@ blockquote span {
     list-style-type: none;
     margin: 0 0 44px 0;
     padding-left: 1em;
+    font-family: "Acumin Pro";
     text-indent: -1.2em;
-    font-size: 1.3rem;
-    font-family: stratos;
+    font-size: 1.2rem;
+    line-height: 1.5625;
 }
 
 .case-focus-list li {
@@ -505,16 +508,16 @@ blockquote span {
   width: 50px;
   height: auto;
   position: absolute;
-  bottom: -3.26em;
-  left: 0.26em;
+  bottom: -3.05em;
+  left: 0.25em;
 }
 
 .more-arrow-list {
     position: relative;
     background: #9d9d9d;
     display: inline-block;
-    width: 27px;
-    height: 27px;
+    width: 28px;
+    height: 28px;
     border-radius: 65px;
     bottom: -5px;
     left: 5px;
@@ -1023,6 +1026,7 @@ a:active.button.large {
 }
 
 /* Headings */
+
 .heading {
   font-size: rem-calc(26);
   letter-spacing: 0.025em;
@@ -1033,8 +1037,8 @@ a:active.button.large {
   font-family: stratos, georgia, serif;
   font-size: 1.1rem;
   font-weight: 700;
-  text-transform: uppercase;
-  margin-bottom: 5px;
+  // text-transform: uppercase;
+  margin-bottom: 10px;
 }
 
 .heading-casestudy {
@@ -1126,11 +1130,11 @@ p:last-of-type {
   color:#fff;
   padding: 0;
   margin: 0.45rem 0.4rem 1.5rem 0;
-  font-family: stratos,Georgia,sans-serif;
+  font-family: "Acumin Pro",Georgia,sans-serif;
   font-size: 1.5rem;
-  float: left;
-  line-height: 1.5;
-  font-weight: 200;
+  display: block;
+  line-height: 1.5625;
+  font-weight: 300;
 }
 
 /* Contact */
@@ -1857,8 +1861,9 @@ html {
 .heading-case-sup {
   color: #d9d9d9;
   margin-bottom: 10px;
-  font-weight: 100;
-  text-transform: none; 
+  font-weight: 400;
+  text-transform: none;
+  font-family: stratos-lights;
 }
 
 .subheading-icon {
@@ -2075,7 +2080,7 @@ html {
 }
 
 .more-arrow-list svg {
-  bottom: -3.65em;
+  bottom: -3.45em;
   left: 0.26em;
 }
 
@@ -2111,6 +2116,22 @@ html {
  .more-arrow svg {
   bottom: -3.05em;
  }
+
+ .sticky {
+  position: static;
+}
+
+.subheading-case-sup {
+  font-family: "Acumin-Pro";
+  font-weight: 400;
+  line-height: 1.5625;
+  color: #9d9d9d;
+}
+
+.heading-under {
+  margin-bottom: 0;
+}
+
 
   } 
 
@@ -2186,8 +2207,9 @@ html {
 .heading-case-sup {
   color: #d9d9d9;
   margin-bottom: 10px;
-  font-weight: 100;
+  font-weight: 400;
   text-transform: none;
+  font-family: stratos-lights;
 }
 
 .subheading-icon {
@@ -2352,6 +2374,10 @@ html {
 
 /* Medium Updates */
 
+.recap-title-off:last-child {
+  margin-bottom: 30px;
+}
+
 .recap-srs {
   padding: 30px 0;
 }
@@ -2397,6 +2423,49 @@ html {
  .more-arrow svg {
   bottom: -2.67em;
  }
+
+ .sticky {
+  position:-webkit-sticky; 
+  position:sticky; 
+  top:40px;
+  z-index: 1;
+  }
+
+.close {
+  font-size: 2.5rem;
+  position: absolute;
+  text-align: right;
+  display: block;
+  background: #3c3c3c;
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 100px;
+  top: -8px;
+  right: -38px;
+  padding: 0px;
+  line-height: 1;
+  text-align: center;
+  color: #fff;
+  }
+
+.subheading-case-sup {
+  margin-top: 30px;
+  font-size: 1.1rem;
+  color: #9d9d9d;
+  line-height: 1.5625;
+}
+
+.heading-under {
+  margin-bottom: 0;
+}
+
+.case-title {
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  font-family: stratos;
+}
 
   }
 
@@ -2615,8 +2684,9 @@ html {
 .heading-case-sup {
   color: #d9d9d9;
   margin-bottom: 10px;
-  font-weight: 100;
+  font-weight: 400;
   text-transform: none;
+  font-family: stratos-lights;
 }
 
 .subheading-icon {
@@ -2640,7 +2710,7 @@ html {
   font-size: rem-calc(14);
   margin: 8px 0 44px 0;
   color: #9d9d9d;
-  line-height: 1.6;
+  line-height: 1.4;
 }
 
 /* Recap */
@@ -2815,12 +2885,17 @@ html {
 }
 
  .biographs {
-  font-size: 1rem
+  font-size: 1.1rem;
+  line-height: 1.5625;
  }
 
  .drop {
   font-size: 1.3rem;
  }
+
+ .heading-under {
+  margin-bottom: 0;
+}
 
   }
 
