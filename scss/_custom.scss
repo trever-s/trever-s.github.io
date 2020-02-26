@@ -193,6 +193,34 @@ a:active {
     }
   }
 
+.shout-7 { color: #78E9D8;
+    -webkit-animation: pulse-color 30s 1s infinite;
+    -moz-animation: pulse-color 30s 1s infinite;
+    -ms-animation: pulse-color 30s 1s infinite;
+    -o-animation: pulse-color 30s 1s infinite;
+    animation: pulse-color 30s 1s infinite;
+  }
+  @-webkit-keyframes pulse-color {
+    0% {
+      color: #78E9D8;
+    }
+    16% {
+      color: #7FDE95;
+    }
+    31% {
+      color: #C89BF8;
+    }
+    47% {
+      color: #FFA1D0;
+    }
+    64% {
+      color: #FFC185;
+    }
+    82% {
+      color: #F79C82;
+    }
+  }
+
 .shout-1:before, .shout-2:before, .shout-3:before {
   content: '';
   display: block;
@@ -1793,6 +1821,14 @@ html {
   font-size: rem-calc(15);
 }
 
+/* Background */
+
+body {
+  background-size: cover;
+  background-position-x: -90px;
+  background-position-y: -130px;
+}
+
 /* Header */
 .header {
   padding: 0 140px 300px 140px;
@@ -2132,6 +2168,14 @@ html {
 
 .heading-under {
   margin-bottom: 0;
+}
+
+.footer-nav {
+  margin-bottom: 20px;
+}
+
+.footer-spread {
+  height: 340px;
 }
 
 
