@@ -2416,12 +2416,18 @@ body {
 }
 
 /* Small Updates */
+
+.drop-intro {
+  line-height: 1.3625;
+  font-size: 1.4em;
+}
+
 .recap-title-off, .case-focus {
   margin-bottom: 30px;
 }
 
 .case-figcaption {
-    font-size: 0.875rem;
+    font-size: 1rem;
     margin: 20px 0 44px 0;
     color: #666;
     max-width: 100%;
@@ -2456,9 +2462,10 @@ body {
 }
 
 .shout-5 {
-  font-size: 50px;
+  font-size: 70px;
   margin-top: 0;
-  margin-bottom: 10px;
+  margin-bottom: 30px;
+  line-height: 0.9em
 }
 
 .shout-4 {
@@ -2521,7 +2528,7 @@ body {
 }
 
 .footer-spread {
-  height: 250px;
+  height: 300px;
   // position: fixed;
   // bottom: 0;
   // z-index: 100000;
@@ -2777,6 +2784,11 @@ html {
 
 /* Medium Updates */
 
+.drop-intro {
+  line-height: 1.4625;
+  font-size: 1.5em;
+}
+
 .recap-title-off:last-child {
   margin-bottom: 30px;
 }
@@ -2798,6 +2810,7 @@ html {
   font-size: 60px;
   margin-top: 10px;
   margin-bottom: 0;
+  line-height: 1;
 }
 
 .shout-4 {
