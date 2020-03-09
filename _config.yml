@@ -5,6 +5,10 @@ description: ""
 baseurl: ""
 url: ""
 
+# Deployment
+host: localhost
+port: 4000
+
 # Build settings
 markdown: kramdown
 permalink: pretty
