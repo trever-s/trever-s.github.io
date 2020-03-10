@@ -293,18 +293,6 @@ a:active {
   margin-bottom: 44px;
 }
 
-.case-prompt {
-  background: none;
-  color: #fff;
-  border-left: 1px solid #616161;
-  font-size: 0.85em;
-}
-
-.case-prompt-title {
-  font-size: 1.1em;
-  color: #b5b5b5;
-}
-
 .case-image {
   border: 1px solid #ddd;
 }
@@ -422,12 +410,6 @@ transition: .1s;
     -webkit-text-fill-color: #000 !important;
 }
 
-.contribute {
-  padding: 60px;
-  margin: 60px 0;
-  background: #404040;
-}
-
 .contribute span {
   border: none;
 }
@@ -469,15 +451,15 @@ transition: .1s;
 /* Blockquote */
 
 .quote-peach {
-    font-size: 1em;
+    font-size: 1.15em;
     width: 100%;
-    margin: 50px auto;
+    margin: 50px auto 20px;
     font-family: acumin-pro;
     color: #3c3c3c;
     position: relative;
     background: rgba(255, 193, 133, 0.15);
     border-left: 2px solid #f79c82;
-    padding: 60px 20px 20px 20px;
+    padding: 60px 40px 20px 20px;
     line-height: 1.4625;
 }
 
@@ -504,15 +486,15 @@ blockquote span {
 }
 
 .quote-apple {
-    font-size: 1em;
+    font-size: 1.15em;
     width: 100%;
-    margin: 50px auto;
+    margin: 50px auto 20px;
     font-family: acumin-pro;
     color: #3c3c3c;
     position: relative;
     background: rgb(238, 249, 239);
     border-left: 2px solid #7fde95;
-    padding: 60px 20px 20px 20px;
+    padding: 60px 40px 20px 20px;
     line-height: 1.4625;
 }
 
@@ -528,15 +510,15 @@ blockquote span {
 }
 
 .quote-plum {
-    font-size: 1em;
+    font-size: 1.15em;
     width: 100%;
-    margin: 50px auto;
+    margin: 50px auto 20px;
     font-family: acumin-pro;
     color: #3c3c3c;
     position: relative;
     background: #f6f1fd;
     border-left: 2px solid #C89BF8;
-    padding: 60px 20px 20px 20px;
+    padding: 60px 40px 20px 20px;
     line-height: 1.4625;
 }
 
@@ -1707,8 +1689,6 @@ https://flickity.metafizzy.co
   transition: all 0.15s ease-in-out;
 }
 
-.flickity-prev-next-button.previous { left: 0px; }
-.flickity-prev-next-button.next { right: 0px; }
 /* right to left */
 .flickity-rtl .flickity-prev-next-button.previous {
   left: auto;
@@ -2417,6 +2397,34 @@ body {
 
 /* Small Updates */
 
+.case-prompt {
+  background: none;
+  color: #fff;
+  border-left: 1px solid #616161;
+  font-size: 1em;
+}
+
+.case-prompt-title {
+  font-size: 1.2em;
+  color: #b5b5b5;
+}
+
+.flickity-prev-next-button.previous { left: 0px; top: 20px; }
+.flickity-prev-next-button.next { right: 0px; top: 20px; }
+
+.case-figcaption {
+  font-size: 0.9rem;
+  margin: 10px 0;
+  color: #666;
+  max-width: 100%;
+}
+
+.contribute {
+  padding: 20px;
+  margin: 30px 0;
+  background: #404040;
+}
+
 .bg-body {
   background-position: -368px -160px;
 }
@@ -2428,13 +2436,6 @@ body {
 
 .recap-title-off, .case-focus {
   margin-bottom: 30px;
-}
-
-.case-figcaption {
-    font-size: 1rem;
-    margin: 20px 0 44px 0;
-    color: #666;
-    max-width: 100%;
 }
 
 .case-title {
@@ -2650,13 +2651,6 @@ html {
   color: #9d9d9d;
 }
 
-.case-figcaption {
-  font-size: 0.9rem;
-  margin: 20px 0 44px 0;
-  color: #666;
-  max-width: 100%;
-}
-
 /* Hero */
 .hero-abm {
   padding: 30px 0 0 0;
@@ -2788,6 +2782,27 @@ html {
 
 /* Medium Updates */
 
+.case-prompt {
+  background: none;
+  color: #fff;
+  border-left: 1px solid #616161;
+  font-size: 0.85em;
+}
+
+.case-prompt-title {
+  font-size: 1.1em;
+  color: #b5b5b5;
+}
+
+.flickity-prev-next-button.previous { left: 0px; }
+.flickity-prev-next-button.next { right: 0px; }
+
+.contribute {
+  padding: 60px;
+  margin: 60px 0;
+  background: #404040;
+}
+
 .bg-body {
   background-position-x: 0;
   background-position-y: 20%;
@@ -2890,7 +2905,11 @@ html {
 }
 
 .case-figcaption {
-  max-width: 100%;
+  font-size: 0.9rem;
+  margin: 20px 0 44px 0;
+  color: #666;
+  line-height: 1.4;
+  max-width: 60%;
 }
 
 .footer-nav-items {
@@ -3138,14 +3157,6 @@ html {
   margin-top: 8px;
   line-height: 1.4;
   color: #9d9d9d;
-}
-
-.case-figcaption {
-  font-size: 0.9rem;
-  margin: 20px 0 44px 0;
-  color: #666;
-  line-height: 1.4;
-  max-width: 50%;
 }
 
 /* Recap */
