@@ -1774,6 +1774,64 @@ https://flickity.metafizzy.co
   max-width: 100%;
 }
 
+/* Flickity fullscreen v1.0.1
+------------------------- */
+
+.flickity-enabled.is-fullscreen {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: hsla(0, 0%, 0%, 0.9);
+  padding-bottom: 35px;
+  z-index: 1;
+}
+
+.flickity-enabled.is-fullscreen .flickity-page-dots {
+  bottom: 10px;
+}
+
+.flickity-enabled.is-fullscreen .flickity-page-dots .dot {
+  background: white;
+}
+
+/* prevent page scrolling when flickity is fullscreen */
+html.is-flickity-fullscreen {
+  overflow: hidden;
+}
+
+/* ---- flickity-fullscreen-button ---- */
+
+.flickity-fullscreen-button {
+  display: block;
+  right: 0px;
+  top: 1px;
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+}
+
+/* right-to-left */
+.flickity-rtl .flickity-fullscreen-button {
+  right: auto;
+  left: 10px;
+}
+
+.flickity-fullscreen-button-exit { display: none; }
+
+.flickity-enabled.is-fullscreen .flickity-fullscreen-button-exit { display: block; }
+.flickity-enabled.is-fullscreen .flickity-fullscreen-button-view { display: none; }
+
+.flickity-fullscreen-button .flickity-button-icon {
+  position: absolute;
+  width: 24px;
+  height: 34px;
+  left: 13px;
+  top: 8px;
+}
+
+
 
 /* Tools */
 .tools {
@@ -2409,8 +2467,8 @@ body {
   color: #b5b5b5;
 }
 
-.flickity-prev-next-button.previous { left: 0px; top: 20px; }
-.flickity-prev-next-button.next { right: 0px; top: 20px; }
+.flickity-prev-next-button.previous { left: 0px; }
+.flickity-prev-next-button.next { right: 0px; }
 
 .case-figcaption {
   font-size: 0.9rem;
