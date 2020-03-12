@@ -32,7 +32,7 @@ module.exports = function(grunt) {
 
     watch: {
       jekyll: {
-        files: ['**/*.html', '**/*.md', '_layouts/*.html', 'scss/*.scss', 'css/*.css', 'scripts/*.js', 'images/*'],
+        files: ['**/*.html', '**/*.md', '_layouts/*.html', 'scss/*.scss', 'css/*.css', 'scripts/*.js', 'js/*.js', 'images/*'],
         tasks: ['shell:jekyll_build']
       }
     },
