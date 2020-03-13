@@ -512,7 +512,7 @@ blockquote span {
 .quote-plum {
     font-size: 1.15em;
     width: 100%;
-    margin: 50px auto 20px;
+    margin: 50px auto 50px;
     font-family: acumin-pro;
     color: #3c3c3c;
     position: relative;
@@ -2397,6 +2397,10 @@ body {
 
 /* Small Updates */
 
+.mobile-gone {
+  display: none;
+}
+
 .case-prompt {
   background: none;
   color: #fff;
@@ -2781,6 +2785,10 @@ html {
 }
 
 /* Medium Updates */
+
+.mobile-gone {
+  display: block;
+}
 
 .case-prompt {
   background: none;
