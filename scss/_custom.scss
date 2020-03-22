@@ -171,7 +171,7 @@ a:active {
   margin-bottom: 20px;
 }
 
-.shout-5, .shout-6 { color: #F79C82;
+.shout-5, .shout-6 { color: #FFC185;
     -webkit-animation: pulse-color 30s 1s infinite;
     -moz-animation: pulse-color 30s 1s infinite;
     -ms-animation: pulse-color 30s 1s infinite;
@@ -180,10 +180,10 @@ a:active {
   }
   @-webkit-keyframes pulse-color {
     0% {
-      color: #F79C82; 
+      color: #FFC185; 
     }
     16% {
-      color: #FFC185; 
+      color: #F79C82; 
     }
     31% {
       color: #7FDE95; 
