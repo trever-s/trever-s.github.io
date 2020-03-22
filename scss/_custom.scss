@@ -1293,6 +1293,9 @@ p:last-of-type {
 
 .biographs {
   color: #fff;
+  font-family: acumin-pro,Georgia,sans-serif;
+  font-weight: 200;
+  line-height: 1.5625;
 }
 
 .biographs a {
@@ -2858,7 +2861,7 @@ html {
 }
 
  .biographs {
-  font-size: 1rem
+  font-size: 1.2rem
  }
 
  .drop {
@@ -3042,6 +3045,7 @@ html {
 
 .lozad {
   min-height: 200px;
+  margin-bottom: 40px;
 }
 
 /* Header */
@@ -3358,8 +3362,7 @@ html {
 }
 
  .biographs {
-  font-size: 1.1rem;
-  line-height: 1.4625;
+  font-size: 1.2rem;
  }
 
  .drop {
